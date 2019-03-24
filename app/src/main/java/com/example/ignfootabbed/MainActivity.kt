@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
-//Project uses some third party libraries
+//Project uses some third party libraries and messed with the manifest
 //Please make sure to pull the entire repo if you want to build the code
 class MainActivity : AppCompatActivity() {
 
