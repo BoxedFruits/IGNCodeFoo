@@ -1,0 +1,12 @@
+According to Google, Coit Tower has an Area of 74,050 sq. ft. and is 210 feet high.
+
+Using the formula for the Area of a cylinder, I can calculate the radius of the tower. 
+Now that I have the radius, I can calculate the volume which is: 1395998.11 cubic feet or 39530.26 cubic meters.
+
+I used the volume of a baseball as it is close to the size of a pokeball.
+The volume is 13.39 cubic inches which is converted to: 0.00021 cubic meters.
+
+I assumed that the pokeballs are densely packed and so used a packing density of 0.66.
+The actual volume that the pokeballs can take up is 25299 cubic meters.
+
+Dividing the volume of pokeballs by the useable volume we get, 25299/.00021 or **120471428 pokeballs**.
