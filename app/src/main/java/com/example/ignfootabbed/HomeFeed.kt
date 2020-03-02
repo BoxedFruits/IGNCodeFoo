@@ -7,7 +7,7 @@ class HomeFeed(val count : Int, val startIndex: Int, val data: List<content>){
 }
 
 class content(val contentId: String, val contentType: String, val thumbnails: List<Thumbnails>,
-              val metadata: Metablata, val tags: Array<String>, val authors: Array<String>) {
+              val metadata: Metablata, val tags: Array<String>) {
 
 }
 

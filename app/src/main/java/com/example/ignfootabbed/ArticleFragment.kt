@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,20 +32,23 @@ class ArticleFragment : Fragment() {
 
     fun fetchJson(){
 
-        val url = "https://ign-apis.herokuapp.com/content"
+        val url = "https://ign-apis.herokuapp.com/articles"
         val request = Request.Builder().url(url).build()
+        Log.d("LOGGING",request.toString());
         val client = OkHttpClient()
         client.newCall(request).enqueue(object : Callback {
             override fun onResponse(call: Call?, response: Response?) {
                 val body = response?.body()?.string()
                 val gson = GsonBuilder().create()
                 val homeFeed = gson.fromJson(body, HomeFeed::class.java)
+                Log.d("LOGGING",homeFeed.toString());
                 getActivity()?.runOnUiThread {
                     rv_frag1.adapter = MainAdapter(sortContentArticle(homeFeed))
                 }
             }
             override fun onFailure(call: Call?, e: IOException) {
                 println("Failed to execute")
+                Log.d("LOGGING","FAILED");
             }
         })
 
