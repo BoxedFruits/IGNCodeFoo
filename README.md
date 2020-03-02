@@ -8,6 +8,6 @@ The task for the Mobile Application portion was:
 2. Build a native app (iOS or Android) that displays the content and matches the design below as close as possible. Don’t worry about the icons. Each item should open a webview for the corresponding content when tapped, except comments.
 
 Final Submission:
-![](https://i.imgur.com/Y8aBWfS.png =327x727)
+![screenshot1](https://i.imgur.com/Y8aBWfS.png =327x727)
 
-![](https://i.imgur.com/AZD9wWt.png =327x727)
+![screenshot2](https://i.imgur.com/AZD9wWt.png =327x727)
